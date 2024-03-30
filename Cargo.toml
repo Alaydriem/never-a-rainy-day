@@ -1,0 +1,6 @@
+[package]
+name = "never-a-rainy-day"
+description = "Control the weather"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
