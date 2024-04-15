@@ -16,12 +16,6 @@ world.beforeEvents.chatSend.subscribe(async (event) => {
   let v = new Version(event, event.sender);
   let cmd = event.message.split(" ");
   switch (cmd[0]) {
-    case "!version":
-      event.cancel = true;
-      system.run(() => {
-        v.version();
-      });
-      break;
     case "!wc":
       event.cancel = true;
       await world.getDimension("overworld").runCommandAsync("weather clear");
@@ -29,6 +23,12 @@ world.beforeEvents.chatSend.subscribe(async (event) => {
     case "!weather":
       event.cancel = true;
       switch (cmd[1]) {
+        case "version":
+          event.cancel = true;
+          system.run(() => {
+            v.version();
+          });
+          break;
         case "clear":
           await world.getDimension("overworld").runCommandAsync("weather clear");
           break;
