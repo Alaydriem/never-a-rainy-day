@@ -1,6 +1,6 @@
 [package]
 name = "never-a-rainy-day"
 description = "Control the weather"
-version = "24.4.14"
+version = "24.12.31"
 edition = "2021"
 [dependencies]

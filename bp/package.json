@@ -1,6 +1,6 @@
 {
   "name": "never-a-rainy-day",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Minecraft Bedrock Pack to Control the Weather",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,9 @@
   "author": "Charles R. Portwood II",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@minecraft/server": "^1.11.0-beta.1.20.80-preview.24",
-    "@minecraft/server-ui": "^1.1.0",
-    "@minecraft/vanilla-data": "^1.20",
-    "@minecraft/math": "^1.1"
+    "@minecraft/server": "^1.17.0-beta",
+    "@minecraft/vanilla-data": "^1.21",
+    "never-a-rainy-day": "file:"
   },
   "devDependencies": {
     "typescript": "^5.4.3"
