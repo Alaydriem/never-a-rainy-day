@@ -2,16 +2,16 @@
   "format_version": 2,
   "header": {
     "name": "Never a Rainy Day",
-    "description": "Control the weather (24.12.31)",
+    "description": "Control the weather (25.6.5)",
     "uuid": "774baa82-33e9-4525-9fbd-dc255275404d",
     "version": [
-      24,
-      12,
-      31
+      25,
+      6,
+      5
     ],
     "min_engine_version": [
       1,
-      17,
+      21,
       0
     ]
   },
@@ -20,18 +20,18 @@
       "type": "data",
       "uuid": "06991498-e710-43de-99b3-ddb37e2cdaa4",
       "version": [
-        24,
-        12,
-        31
+        25,
+        6,
+        5
       ]
     },
     {
       "type": "script",
       "uuid": "65ccc54b-08c1-48ca-9f99-d55b42466764",
       "version": [
-        24,
-        12,
-        31
+        25,
+        6,
+        5
       ],
       "entry": "scripts/main.js",
       "language": "javascript"
@@ -39,7 +39,7 @@
   ],
   "dependencies": [
     {
-      "version": "1.17.0-beta",
+      "version": "2.0.0-beta",
       "module_name": "@minecraft/server"
     }
   ],

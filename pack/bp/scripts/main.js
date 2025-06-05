@@ -18,7 +18,9 @@ world.beforeEvents.chatSend.subscribe(async (event) => {
   switch (cmd[0]) {
     case "!wc":
       event.cancel = true;
-      await world.getDimension("overworld").runCommandAsync("weather clear");
+      system.run(() => {
+          world.getDimension("overworld").runCommand("weather clear");
+      });
       break;
     case "!weather":
       event.cancel = true;
@@ -30,7 +32,9 @@ world.beforeEvents.chatSend.subscribe(async (event) => {
           });
           break;
         case "clear":
-          await world.getDimension("overworld").runCommandAsync("weather clear");
+          system.run(() => {
+              world.getDimension("overworld").runCommand("weather clear");
+          });
           break;
         case "default":
           world_weather_setting = WeatherSettings.Default;
